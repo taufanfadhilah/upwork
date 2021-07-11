@@ -15,12 +15,12 @@ class CreateMingmartClothesTable extends Migration
     {
         Schema::create('mingmart_clothes', function (Blueprint $table) {
             $table->id();
-            $table->string('handle')->nullable();
-            $table->string('title')->nullable();
-            $table->text('body_html')->nullable();
+            $table->text('handle')->nullable();
+            $table->text('title')->nullable();
+            $table->longText('body_html')->nullable();
             $table->string('vendor')->nullable();
             $table->string('type')->nullable();
-            $table->string('tags')->nullable();
+            $table->text('tags')->nullable();
             $table->string('published')->nullable();
             $table->string('option1_name')->nullable();
             $table->string('option1_value')->nullable();
@@ -39,12 +39,12 @@ class CreateMingmartClothesTable extends Migration
             $table->string('variant_requires_shipping')->nullable();
             $table->string('variant_taxable')->nullable();
             $table->string('variant_barcode')->nullable();
-            $table->string('image_src')->nullable();
+            $table->longText('image_src')->nullable();
             $table->string('image_position')->nullable();
             $table->string('image_alt_text')->nullable();
             $table->string('gift_card')->nullable();
             $table->string('seo_title')->nullable();
-            $table->string('seo_description')->nullable();
+            $table->text('seo_description')->nullable();
             $table->string('google_shop_product_category')->nullable();
             $table->string('google_shop_gender')->nullable();
             $table->string('google_shop_age_group')->nullable();
@@ -59,7 +59,7 @@ class CreateMingmartClothesTable extends Migration
             $table->string('google_shop_adwords_custom_label_3')->nullable();
             $table->string('google_shop_adwords_custom_label_4')->nullable();
             $table->string('variant_image')->nullable();
-            $table->string('vairant_weight_unit')->nullable();
+            $table->string('variant_weight_unit')->nullable();
             $table->string('variant_tax_code')->nullable();
             $table->string('cost_per_item')->nullable();
             $table->timestamps();
