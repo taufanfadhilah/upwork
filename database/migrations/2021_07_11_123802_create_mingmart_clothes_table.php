@@ -62,6 +62,11 @@ class CreateMingmartClothesTable extends Migration
             $table->string('variant_weight_unit')->nullable();
             $table->string('variant_tax_code')->nullable();
             $table->string('cost_per_item')->nullable();
+            $table->string('size')->nullable();
+            $table->string('size_qty')->nullable();
+            $table->string('size_price')->nullable();
+            $table->string('color')->nullable();
+            $table->string('sku')->nullable();
             $table->timestamps();
         });
     }

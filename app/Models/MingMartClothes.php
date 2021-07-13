@@ -59,5 +59,10 @@ class MingMartClothes extends Model
                             'vairant_weight_unit',
                             'variant_tax_code',
                             'cost_per_item',
+                            'size',
+                            'size_qty',
+                            'size_price',
+                            'color',
+                            'sku'
                         ];
 }
